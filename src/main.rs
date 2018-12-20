@@ -90,8 +90,10 @@ impl Board {
         }
         let mut fr = BufReader::new(f.unwrap());
         let mut contents = String::new();
-        fr.read_to_string(&mut contents)
-            .expect("could not read from file");
+        match fr.read_to_string(&mut contents) {
+            Err(_) => return Err(format!("Could not read file {}", filename)),
+            Ok(_) => {}
+        }
         let mut i = 0;
         for c in contents.chars() {
             if c == '\n' || c == '\r' {

@@ -1,4 +1,4 @@
 [[package]]
-name = "sudoku"
+name = "sudoku_rust"
 version = "0.1.0"
 
