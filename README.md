@@ -18,5 +18,6 @@ for example *expert.txt* is the following:
 900000007
 045900080
 ```
-run:<br>
-cargo run -- &lt;*sudoku file name*&gt;
+to run:
+
+`cargo run -- <sudoku file name>`
